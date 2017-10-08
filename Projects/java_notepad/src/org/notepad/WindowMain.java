@@ -19,9 +19,9 @@ import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 @SuppressWarnings("serial")
 public class WindowMain extends JFrame {
-	ImageIcon imageIcon = new ImageIcon(getClass().getResource("/img/icon.png"));
+	//	ImageIcon imageIcon = new ImageIcon(getClass().getResource("/img/icon.png"));
 	NimbusLookAndFeel nlaf = new NimbusLookAndFeel();
-	
+
 	JMenuBar menuBar;
 	JMenu menuFile;
 	JMenu menuEdit;
@@ -34,7 +34,7 @@ public class WindowMain extends JFrame {
 	String fontName = "Sansserif"; // 字体名称
 
 	public WindowMain() {
-		setIconImage(imageIcon.getImage());
+//		setIconImage(imageIcon.getImage());
 		setSize(800, 600);
 		setLocationRelativeTo(null);
 		setTitle("无标题 - 记事本");
@@ -46,7 +46,7 @@ public class WindowMain extends JFrame {
 
 	/**
 	 * 用循环添加项目到菜单
-	 * 
+	 *
 	 * @param menuItems
 	 *            设置一个二维数组用于存储菜单项的名称、快捷键(JAVA键盘的KeyCode)、实际值
 	 * @param menu
@@ -122,7 +122,7 @@ public class WindowMain extends JFrame {
 
 	/**
 	 * 设置全局显示字体
-	 * 
+	 *
 	 * @param font
 	 */
 	public void initGlobalFontSetting(Font font) {
@@ -138,7 +138,7 @@ public class WindowMain extends JFrame {
 
 	/**
 	 * 更新风格外观
-	 * 
+	 *
 	 * @param className
 	 */
 	void changeLookFeel(String className) {

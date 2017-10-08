@@ -53,53 +53,53 @@ public class ListenerMenu implements ActionListener {
 		int menuNumber = Integer.parseInt(event.getActionCommand());
 
 		switch (menuNumber) {
-		case 1001:
-			newFile();
-			break;
-		case 1002:
-			openFile();
-			break;
-		case 1003:
-			saveFileIfExist();
-			break;
-		case 1004:
-			saveAsFile();
-			break;
-		case 1005:
-			confirmExit();
-			break;
-		case 2001:
-			mainTextArea.selectAll();
-			break;
-		case 2002:
-			mainTextArea.copy();
-			break;
-		case 2003:
-			mainTextArea.cut();
-			break;
-		case 2004:
-			mainTextArea.paste();
-			break;
-		case 3001:
-			changeWordWrap();
-			break;
-		case 30020:
-			changeFontSize(true);
-			break;
-		case 30021:
-			changeFontSize(false);
-			break;
-		case 3003:
-			changeBgColor();
-			break;
-		case 9001:
-			JOptionPane.showMessageDialog(windowFrame, "版本：201612", "关于“记事本”",
-					JOptionPane.INFORMATION_MESSAGE);
-			break;
-		default:
-			JOptionPane.showMessageDialog(windowFrame, "功能开发中...", "功能编号" + String.valueOf(menuNumber),
-					JOptionPane.ERROR_MESSAGE);
-			break;
+			case 1001:
+				newFile();
+				break;
+			case 1002:
+				openFile();
+				break;
+			case 1003:
+				saveFileIfExist();
+				break;
+			case 1004:
+				saveAsFile();
+				break;
+			case 1005:
+				confirmExit();
+				break;
+			case 2001:
+				mainTextArea.selectAll();
+				break;
+			case 2002:
+				mainTextArea.copy();
+				break;
+			case 2003:
+				mainTextArea.cut();
+				break;
+			case 2004:
+				mainTextArea.paste();
+				break;
+			case 3001:
+				changeWordWrap();
+				break;
+			case 30020:
+				changeFontSize(true);
+				break;
+			case 30021:
+				changeFontSize(false);
+				break;
+			case 3003:
+				changeBgColor();
+				break;
+			case 9001:
+				JOptionPane.showMessageDialog(windowFrame, "版本：201612", "关于“记事本”",
+						JOptionPane.INFORMATION_MESSAGE);
+				break;
+			default:
+				JOptionPane.showMessageDialog(windowFrame, "功能开发中...", "功能编号" + String.valueOf(menuNumber),
+						JOptionPane.ERROR_MESSAGE);
+				break;
 		}
 
 	}
@@ -112,19 +112,19 @@ public class ListenerMenu implements ActionListener {
 			int n = JOptionPane.showConfirmDialog(windowFrame, "是否保存以下文件？\n" + filePath, "可能有未保存的文件",
 					JOptionPane.YES_NO_CANCEL_OPTION);
 			switch (n) {
-			case JOptionPane.YES_OPTION:
-				saveFile();
-				chooser = new JFileChooser();
-				fileOpened = false;
-				break;
-			case JOptionPane.NO_OPTION:
-				chooser = new JFileChooser();
-				fileOpened = false;
-				break;
-			case JOptionPane.CANCEL_OPTION:
-				break;
-			default:
-				break;
+				case JOptionPane.YES_OPTION:
+					saveFile();
+					chooser = new JFileChooser();
+					fileOpened = false;
+					break;
+				case JOptionPane.NO_OPTION:
+					chooser = new JFileChooser();
+					fileOpened = false;
+					break;
+				case JOptionPane.CANCEL_OPTION:
+					break;
+				default:
+					break;
 			}
 		}
 		if (!fileOpened) {
@@ -141,19 +141,19 @@ public class ListenerMenu implements ActionListener {
 			int n = JOptionPane.showConfirmDialog(windowFrame, "是否保存以下文件？\n" + filePath, "可能有未保存的文件",
 					JOptionPane.YES_NO_CANCEL_OPTION);
 			switch (n) {
-			case JOptionPane.YES_OPTION:
-				saveFileIfExist();
-				chooser = new JFileChooser();
-				fileOpened = false;
-				break;
-			case JOptionPane.NO_OPTION:
-				chooser = new JFileChooser();
-				fileOpened = false;
-				break;
-			case JOptionPane.CANCEL_OPTION:
-				break;
-			default:
-				break;
+				case JOptionPane.YES_OPTION:
+					saveFileIfExist();
+					chooser = new JFileChooser();
+					fileOpened = false;
+					break;
+				case JOptionPane.NO_OPTION:
+					chooser = new JFileChooser();
+					fileOpened = false;
+					break;
+				case JOptionPane.CANCEL_OPTION:
+					break;
+				default:
+					break;
 			}
 		}
 		if (!fileOpened) {
@@ -233,17 +233,17 @@ public class ListenerMenu implements ActionListener {
 			int n = JOptionPane.showConfirmDialog(windowFrame, "是否保存以下文件？\n" + filePath, "退出:可能有未保存的文件",
 					JOptionPane.YES_NO_CANCEL_OPTION);
 			switch (n) {
-			case JOptionPane.YES_OPTION:
-				saveFileIfExist();
-				System.exit(0);
-				break;
-			case JOptionPane.NO_OPTION:
-				System.exit(0);
-				break;
-			case JOptionPane.CANCEL_OPTION:
-				break;
-			default:
-				break;
+				case JOptionPane.YES_OPTION:
+					saveFileIfExist();
+					System.exit(0);
+					break;
+				case JOptionPane.NO_OPTION:
+					System.exit(0);
+					break;
+				case JOptionPane.CANCEL_OPTION:
+					break;
+				default:
+					break;
 			}
 		} else {
 			System.exit(0);
@@ -260,8 +260,8 @@ public class ListenerMenu implements ActionListener {
 	}
 
 	/**
-	 * 实现颜色反色 
-	 * 
+	 * 实现颜色反色
+	 *
 	 * @param c
 	 * @return
 	 */
