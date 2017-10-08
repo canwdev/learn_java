@@ -11,6 +11,7 @@ public class Main {
                 "we assure not to make your data public\n" +
                 "and won't save the data on any web server.\n" +
                 "Do you agree? (y/n)");
+        // TODO: 2017/10/8 in.nextChar??
         String agreement = in.nextLine();
         if (!agreement.equalsIgnoreCase("y")) {
             System.exit(0);
