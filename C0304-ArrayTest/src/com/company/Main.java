@@ -29,7 +29,7 @@ public class Main {
             // 设置随机选择的数值
             result[i] = numbers[r];
             // 将被选中的数值设为最后的数值，并将n缩短一位，防止抽重
-            numbers[r] = numbers[n-1];
+            numbers[r] = numbers[n - 1];
             n--;
         }
 
@@ -39,5 +39,33 @@ public class Main {
             System.out.print(r + "\t");
         }*/
         System.out.println(Arrays.toString(result));
+        System.out.println("------------------------");
+
+        final int NMAX = 10;
+
+        // 初始化一个不规则三角形数组
+        int[][] odds = new int[NMAX + 1][];
+        for (int i = 0; i <= NMAX; i++) {
+            odds[i] = new int[i + 1];
+        }
+
+        // 填充数组
+        for (int i = 0; i < odds.length; i++) {
+            for (int j = 0; j < odds[i].length; j++) {
+                // 使用二项式系数来填充（binomial coefficient）
+                int lotteryOdds = 1;
+                for (int l = 1; l <= j; l++) {
+                    lotteryOdds = lotteryOdds * (i - l + 1) / l;
+                }
+                odds[i][j] = lotteryOdds;
+            }
+        }
+
+        for (int[] row : odds) {
+            for (int odd : row) {
+                System.out.printf("%4d", odd);
+            }
+            System.out.println();
+        }
     }
 }
