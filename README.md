@@ -1,6 +1,6 @@
 # learn_java
 
-<img src="./Projects/ores/think.png" width="100%"/>
+<img src="./Projects/ores/think.png" width="30%"/>
 
 Java study code & notes
 
