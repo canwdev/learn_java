@@ -9,7 +9,14 @@ import java.util.GregorianCalendar;
 public class Main extends Object {
 
     public static void main(String[] args) {
-        example();
+        // 接收命令行参数
+        if (args != null && args.length == 1) {
+            int arg = Integer.parseInt(args[0]);
+            example(arg);
+        } else {
+            example(1000);
+        }
+
         printCalendar();
         printCalendarMondayFirst();
     }
@@ -92,7 +99,7 @@ public class Main extends Object {
         }
     }
 
-    private static void example() {
+    private static void example(int days) {
         Date today = new Date();
         Date deadline;
         // 引用了today对象
@@ -102,8 +109,8 @@ public class Main extends Object {
         LocalDate localDay = LocalDate.now();
         System.out.println(localDay);
         // 访问器方法
-        LocalDate aThousandDaysLater = localDay.plusDays(1000);
-        System.out.println("aThousandDaysLater: " + aThousandDaysLater);
+        LocalDate aThousandDaysLater = localDay.plusDays(days);
+        System.out.println(days + " DaysLater: " + aThousandDaysLater);
 
         GregorianCalendar someDay = new GregorianCalendar(localDay.getYear(), localDay.getMonthValue(), localDay.getDayOfMonth());
         System.out.println(someDay.get(Calendar.YEAR));
