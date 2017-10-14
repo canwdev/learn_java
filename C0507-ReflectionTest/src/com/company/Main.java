@@ -28,7 +28,7 @@ public class Main {
      * 利用反射分析类的能力
      * @param name 类的全名 例 java.util.Date
      */
-    private static void printClassInfo(String name) {
+    public static void printClassInfo(String name) {
         try {
             Class cl = Class.forName(name);
             Class superCl = cl.getSuperclass();
@@ -190,7 +190,14 @@ public class Main {
     public static String getLastName(String paraName) {
 
         if (!SHOW_FULL_NAME && paraName.contains(".")) {
-            return paraName.substring(paraName.lastIndexOf(".") + 1);
+            // 如果是数组型参数（参数数量可变的方法）
+            if (paraName.contains(";")) {
+                String temp = paraName.substring(paraName.lastIndexOf(".") + 1);
+                // return temp.substring(0,temp.length()-1);
+                return temp.replace(";","...");
+            } else {
+                return paraName.substring(paraName.lastIndexOf(".") + 1);
+            }
         } else {
             return paraName;
         }
