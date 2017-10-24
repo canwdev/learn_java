@@ -7,7 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
         String[] friends = {"Peter", "Bill", "Van"};
+        // 实例化比较器
         Comparator comp = new LengthComparator();
+
+        // 直接比较
         if (comp.compare(friends[0], friends[1])>0) {
             System.out.println(">");
         }
@@ -20,6 +23,7 @@ public class Main {
 
             if (i == 0) {
                 System.out.println("-- Sort by String.length() --");
+                // 排序
                 Arrays.sort(friends, new LengthComparator());
             }
         }
