@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="209b8b26-9016-48c5-a53b-eb2ce5855aa2" name="Default" comment="" />
+    <list default="true" id="935b0aa0-faf4-4977-a9da-0376a680a7d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,8 +15,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="216">
+              <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,13 +24,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimerPrinter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/TimerPrinter.java">
+      <file leaf-file-name="LengthComparator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/LengthComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#221#222#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,7 +54,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/TimerPrinter.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LengthCompareator.java" />
+        <option value="$PROJECT_DIR$/src/com/company/LengthComparator.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
@@ -79,25 +81,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="C0602-TimerTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C0602-TimerTest" type="462c0819:PsiDirectoryNode" />
+              <item name="C0603-ComparatorTest2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0603-ComparatorTest2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="C0602-TimerTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C0602-TimerTest" type="462c0819:PsiDirectoryNode" />
+              <item name="C0603-ComparatorTest2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0603-ComparatorTest2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="C0602-TimerTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="C0602-TimerTest" type="462c0819:PsiDirectoryNode" />
+              <item name="C0603-ComparatorTest2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="C0603-ComparatorTest2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -105,10 +105,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../C0601-InterfaceTest" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,7 +133,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="C0602-TimerTest" />
+      <module name="C0603-ComparatorTest2" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -165,11 +164,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="209b8b26-9016-48c5-a53b-eb2ce5855aa2" name="Default" comment="" />
-      <created>1508804179051</created>
+      <changelist id="935b0aa0-faf4-4977-a9da-0376a680a7d9" name="Default" comment="" />
+      <created>1508805786109</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1508804179051</updated>
+      <updated>1508805786109</updated>
     </task>
     <servers />
   </component>
@@ -213,31 +212,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/company/TimerPrinter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/LengthComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="168">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/swing/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="265" column="26" lean-forward="true" selection-start-line="265" selection-start-column="26" selection-end-line="265" selection-end-column="26" />
-          <folding>
-            <element signature="e#8919#8920#0" expanded="false" />
-            <element signature="e#8983#8984#0" expanded="false" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+        <state relative-caret-position="216">
+          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
