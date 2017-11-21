@@ -1,5 +1,7 @@
 package com.company;
 
+import jdk.nashorn.internal.ir.Block;
+
 import java.time.LocalDate;
 
 // 泛型测试 2
@@ -15,6 +17,8 @@ public class PairTest2 {
 
         Pair<LocalDate> result = ArrayAlg.minMax(birthdays);
         System.out.println("min: " + result.getFirst() + "\n" + "max: " + result.getSecond());
+
+
     }
 
     public static class ArrayAlg {
